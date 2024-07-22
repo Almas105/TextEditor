@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="control-group">
+                <label for="fontFamily">Font Family:</label>
+                <select id="fontFamily"></select>
+            </div>
+            <div class="control-group">
+                <label for="fontWeight">Font Weight:</label>
+                <select id="fontWeight"></select>
+            </div>
+            <div class="control-group toggle-container">
+                <label for="toggleItalic" class="toggle-label">Italic:</label>
+                <label class="switch">
+                    <input type="checkbox" id="toggleItalic">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+        <div class="editor-container">
+            <textarea id="editor" placeholder="Type something..."></textarea>
+        </div>
+        <div class="actions">
+            <button id="save" class="btn">Save</button>
+            <button id="reset" class="btn">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
